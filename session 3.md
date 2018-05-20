@@ -1,3 +1,12 @@
+### Dilated Convolution
+Dilated convolution is just the normal convolution operation with modified kernel, to be exact, wider kernel.
+
+> Dilation is largely the same as run-of-the-mill convolution (frankly so is deconvolution), except that it introduces gaps into it's kernels, i.e. whereas a standard kernel would typically slide over contiguous sections of the input, it's dilated counterpart may, for instance, "encircle" a larger section of the image --while still only have as many weights/inputs as the standard form. 
+
+The familiar discrete convolution is simply the 1-dilated convolution. If we increase this value from 1 to 2, then the receptive field of the kernel grows without the loss of resolution or coverage. this achieves integrating more knowledge of the wider context with less cost. This has usage in detecting object boundriese and image segmentation.
+
+![Image](https://i.stack.imgur.com/qA0Kx.gif)
+
 ### Activation Function
 The activation function in a neural network acts on the output of intermediate layers to transform the processed output from that layer. The activation function transforms the value into the interval of [-1, 1] or [0, 1]. This basically tells if a neuron should be activated or not.
 
@@ -38,12 +47,3 @@ The formula for weight variance in this is:
 var(wi) = 1/N(avg)
 where N(avg) = N(in) + N(out) / 2
 ```
-
-### Dilated Convolution
-Dilated convolution is just the normal convolution operation with modified kernel, to be exact, wider kernel.
-
-> Dilation is largely the same as run-of-the-mill convolution (frankly so is deconvolution), except that it introduces gaps into it's kernels, i.e. whereas a standard kernel would typically slide over contiguous sections of the input, it's dilated counterpart may, for instance, "encircle" a larger section of the image --while still only have as many weights/inputs as the standard form. 
-
-The familiar discrete convolution is simply the 1-dilated convolution. If we increase this value from 1 to 2, then the receptive field of the kernel grows without the loss of resolution or coverage. this achieves integrating more knowledge of the wider context with less cost. This has usage in detecting object boundriese and image segmentation.
-
-![Image](https://i.stack.imgur.com/qA0Kx.gif)
