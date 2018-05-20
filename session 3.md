@@ -39,7 +39,7 @@ var(wi) = 1/N(avg)
 where N(avg) = N(in) + N(out) / 2
 ```
 
-#### Dilated Convolution
+### Dilated Convolution
 Dilated convolution is just the normal convolution operation with modified kernel, to be exact, wider kernel.
 
 > Dilation is largely the same as run-of-the-mill convolution (frankly so is deconvolution), except that it introduces gaps into it's kernels, i.e. whereas a standard kernel would typically slide over contiguous sections of the input, it's dilated counterpart may, for instance, "encircle" a larger section of the image --while still only have as many weights/inputs as the standard form. 
