@@ -15,7 +15,7 @@
 | 0 |
 
 ### Python code for forward & back propagation
-```
+```python
 import numpy as np
 
 
